@@ -1,4 +1,5 @@
-const {getSum, getHalfwaySum} = require("./ex1");
+const getSum = require("./ex11");
+const getHalfwaySum = require("./ex12");
 const {parseFile} = require("./parseFile");
 
 describe("ex1", () => {
@@ -23,7 +24,7 @@ describe("ex1", () => {
     it("solution", () => {
         const input = parseFile("./ex1-a.txt");
         const result = getSum(input);
-        expect(result).toBe(1119);
+        expect(result).toBe(1031);
     });
 });
 
@@ -53,6 +54,6 @@ describe("ex1 part 2", () => {
     it("solution", () => {
         const input = parseFile("./ex1-a.txt");
         const result = getHalfwaySum(input);
-        expect(result).toBe(1420);
+        expect(result).toBe(1080);
     });
 });
